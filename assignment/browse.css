@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    padding: 0;
+    transition: 0.6s;
+}
+
+
+.container{
+    text-align: center;
+    
+}
+.container a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+    color: white;
+    transition: 0.6s;
+}
+.container1{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.navi ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*font-weight: bold;*/
+    font-family: monospace;
+    font-size: 15px;
+    
+    
+}
+.navi ul li{
+    
+    display: inline-block;
+    margin: 15px;
+    margin-top: 20px;
+    
+}
+.navi ul li a{
+    text-decoration: none;
+    color: rgb(75, 194, 249);
+    background-color: #fff;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.navi ul li a:hover{
+    color: #fff;
+    background-color: #21E1E1;
+    border: 2px #21E1E1 solid;
+    transition: 0.6s;
+}
+.header-bottom{
+    
+    background-image: linear-gradient(65deg, rgba(255,255,255,0.9), rgba(171, 226, 248, 0.2));
+    background-size: 500%;
+    animation: hbottom 15s infinite;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+@keyframes hbottom{
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+.title{
+    text-align: center;
+
+}
+.title h1{
+    color: #368bf9;
+    
+}
+.title h3{
+    color: #313538;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+hr{
+    width: 85%;
+}
+.catogery ul{
+    display: flex;
+    justify-content: center;
+   
+}
+.catogery ul li{
+    margin-right: 10px;
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    border: #368bf9 1px solid;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.catogery ul li h3{
+    position: relative;
+    top: -15px;
+   
+}
+.catogery ul li:hover{
+    background-color: #73acf73a;
+}
+.catogery ul li h3 a{
+    text-decoration: none;
+    color: #368bf9;
+}
+.bestsell{
+    background-color: #bed7f866;
+    border-radius: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+.bestsell .head{
+    text-align: center;
+    
+}
+.head h2{
+    color: #4f9dd8;
+    margin-top: 10px;
+}
+.head h3{
+    color: #313538;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+hr{
+    width: 85%;
+}
+.sellbooks{
+    width: 15%;
+    list-style: none;
+    display: flex;
+    margin: 50px;
+    
+    
+}
+.sellbooks li{
+    margin-right: 10px;
+    
+}
+.sellbooks li img{
+    position: relative;
+    left: -10px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.sellbooks li h3{
+    font-family: 'Dosis', sans-serif;
+    color: #4f9dd8;
+    text-align: center;
+}
+.sellbooks li h4{
+    font-family: 'Cinzel', serif;
+    color: #4f5860;
+    text-align: center;
+}
+.sellbooks li img:hover{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 35px #000;
+}
+.kids{
+    background-color: #bed7f866;
+    border-radius: 20px;
+}
+.kids .head{
+    text-align: center;
+    margin-top: 20px;
+}
+.kids .head h2{
+    margin-top: 20px;
+}
+.kids .container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+
+}
+.kids .container .item{
+    background-color: #a0c9ff66;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+
+}
+.kids .container .item:hover{
+    background-color: #3f8ef766;
+}
+.kids .container .item img{
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+.kids .container .item img:hover{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 35px #000;
+}
+
+
+.kids a{
+    text-decoration: none;
+}
+.kids .item h3{
+    font-family: 'Dosis', sans-serif;
+    color: #4f9dd8;
+    text-align: center;
+}
+.kids .item h4{
+    font-family: 'Cinzel', serif;
+    color: #4f5860;
+    text-align: center;   
+}
+
+.history{
+    background-color: #bed7f866;
+    border-radius: 20px;
+}
+.history .head{
+    text-align: center;
+    margin-top: 20px;
+}
+.history .head h2{
+    margin-top: 20px;
+}
+.history .container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+
+}
+.history .container .item{
+    background-color: #a0c9ff66;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+
+}
+.history .container .item:hover{
+    background-color: #3f8ef766;
+}
+.history .container .item img{
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+.history .container .item img:hover{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 35px #000;
+}
+
+
+.history a{
+    text-decoration: none;
+}
+.history .item h3{
+    font-family: 'Dosis', sans-serif;
+    color: #4f9dd8;
+    text-align: center;
+}
+.history .item h4{
+    font-family: 'Cinzel', serif;
+    color: #4f5860;
+    text-align: center;   
+}
+
+.biography{
+    background-color: #bed7f866;
+    border-radius: 20px;
+}
+.biography .head{
+    text-align: center;
+    margin-top: 20px;
+}
+.biography .head h2{
+    margin-top: 20px;
+}
+.biography .container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+
+}
+.biography .container .item{
+    background-color: #a0c9ff66;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+
+}
+.biography .container .item:hover{
+    background-color: #3f8ef766;
+}
+.biography .container .item img{
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+.biography .container .item img:hover{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 35px #000;
+}
+
+
+.biography a{
+    text-decoration: none;
+}
+.biography .item h3{
+    font-family: 'Dosis', sans-serif;
+    color: #4f9dd8;
+    text-align: center;
+}
+.biography .item h4{
+    font-family: 'Cinzel', serif;
+    color: #4f5860;
+    text-align: center;   
+}
+
+.socialmedia img{
+    width: 5%;
+    margin-top: 25px;
+}
+.footercontainer{
+    width: 100%;
+    height: 80px;
+    background-color: #205de1;
+}
+.footercontainer .footer{
+    display:flex;
+    
+    
+}
+.ftlogo{
+    margin-left: 500px;
+    margin-top: 15px;
+}

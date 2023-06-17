@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        .main {
+            display: flex;
+
+        }
+
+        .details {
+            width: 29%;
+            height: 720px;
+            background-color: #caf0f8;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        .cart {
+            width: 49%;
+            height: auto;
+            background-color: #caf0f8;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .side {
+            width: 20%;
+            height: auto;
+            background-color: #caf0f8;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .photo {
+            width: 20rem;
+            height: 20rem;
+            background-color: turquoise;
+            border-radius: 50%;
+            margin-left: 55px;
+
+
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .det {
+            display: flex;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+
+
+        }
+
+        .det ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .updatebtn {
+            width: 65%;
+            height: 30px;
+            background-color: #48cae4;
+            text-align: center;
+            margin-left: 80px;
+            border-radius: 10px;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .updatebtn h3 {
+            position: relative;
+            top: 5px;
+        }
+
+        .updatebtn:hover {
+            background-color: #90e0ef;
+        }
+
+        .deletebtn {
+            width: 65%;
+            height: 30px;
+            background-color: #d23e1d;
+            color: #fff;
+            text-align: center;
+            margin-left: 60px;
+            border-radius: 10px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .deletebtn h3 {
+            position: relative;
+            top: 4px;
+        }
+
+        .deletebtn:hover {
+            background-color: #ba2503;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="details">
+            <h1>Profile</h1>
+            <div class="photo"></div>
+            <div class="det">
+                <ul>
+                    <li>Name </li>
+                    <li>Age </li>
+                    <li>Birthdate </li>
+                    <li>Contact </li>
+                    <li>Email </li>
+
+                </ul>
+                <ul>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                </ul>
+                <ul>
+                    <li>' . $fname . $lname . '</li>
+                    <li>' . $age . '</li>
+                    <li>' . $bdate . '</li>
+                    <li>' . $contact . '</li>
+                    <li>' . $email . '</li>
+
+                </ul>
+            </div>
+            <div class="update">
+                
+                <form action="delete.php" name="form1" method="post">
+                    <input type="hidden" name="id" value="'.$id.'">
+                    <input type="submit" value="Edit" class="updatebtn">
+                </form>
+
+            </div>
+        </div>
+        <div class="cart">
+            <h1>cart</h1>
+        </div>
+        <div class="side">
+            <h1>side</h1>
+            <form action="delete.php" name="form1" method="post">
+                <input type="hidden" name="id" value="'.$id.'">
+                <input type="submit" value="Delete account" class="deletebtn">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
